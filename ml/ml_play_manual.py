@@ -42,7 +42,7 @@ class MLPlay:
                 self.control_list["right_PWM"] = 0
 
             taining_data_at_this_frame = {
-                "features": [scene_info["F_sensor"], scene_info["L_sensor"], scene_info["L_T_sensor"], scene_info["R_sensor"], scene_info["R_T_sensor"]],
+                "features": [scene_info["F_sensor"], scene_info["L_sensor"], scene_info["L_T_sensor"], scene_info["R_sensor"], scene_info["R_T_sensor"], scene_info["end_x"], scene_info["end_y"]],
                 "label": self.control_list
             }
             self.training_data.append(taining_data_at_this_frame)
@@ -63,7 +63,7 @@ class MLPlay:
             print("Round:", round_num)
             print('win')
 
-            directory = f"./data/1/map_{self.map}"
+            directory = f"./data/2/map_{self.map}"
             os.makedirs(directory, exist_ok=True)  # Create directory if it does not exist
             file_path = f"{directory}/{self.frame}frames_round{round_num}.json"
             with open(file_path, 'w', encoding='utf-8') as file:

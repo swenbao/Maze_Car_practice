@@ -64,7 +64,7 @@ class MLPlay:
                 self.control_list["right_PWM"] = 255
 
             taining_data_at_this_frame = {
-                "features": [scene_info["F_sensor"], scene_info["L_sensor"], scene_info["L_T_sensor"], scene_info["R_sensor"], scene_info["R_T_sensor"]],
+                "features": [scene_info["F_sensor"], scene_info["L_sensor"], scene_info["L_T_sensor"], scene_info["R_sensor"], scene_info["R_T_sensor"], scene_info],
                 "label": self.control_list
             }
             self.training_data.append(taining_data_at_this_frame)

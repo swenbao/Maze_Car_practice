@@ -1,0 +1,990 @@
+[
+    {
+        "features": [
+            -1,
+            -1,
+            -1,
+            -1,
+            -1
+        ],
+        "label": {
+            "left_PWM": 140,
+            "right_PWM": 40
+        }
+    },
+    {
+        "features": [
+            -1,
+            -1,
+            -1,
+            -1,
+            -1
+        ],
+        "label": {
+            "left_PWM": 140,
+            "right_PWM": 40
+        }
+    },
+    {
+        "features": [
+            96.7,
+            7.1,
+            12.5,
+            7.6,
+            12.6
+        ],
+        "label": {
+            "left_PWM": 140,
+            "right_PWM": 40
+        }
+    },
+    {
+        "features": [
+            98.1,
+            7.5,
+            12.2,
+            7.7,
+            13.4
+        ],
+        "label": {
+            "left_PWM": 140,
+            "right_PWM": 40
+        }
+    },
+    {
+        "features": [
+            97.8,
+            7.2,
+            12.7,
+            8.3,
+            13.0
+        ],
+        "label": {
+            "left_PWM": 140,
+            "right_PWM": 40
+        }
+    },
+    {
+        "features": [
+            93.3,
+            7.7,
+            13.1,
+            7.6,
+            13.3
+        ],
+        "label": {
+            "left_PWM": 140,
+            "right_PWM": 40
+        }
+    },
+    {
+        "features": [
+            94.1,
+            7.6,
+            12.7,
+            7.8,
+            13.3
+        ],
+        "label": {
+            "left_PWM": 140,
+            "right_PWM": 40
+        }
+    },
+    {
+        "features": [
+            101.7,
+            7.7,
+            12.0,
+            8.0,
+            12.6
+        ],
+        "label": {
+            "left_PWM": 140,
+            "right_PWM": 40
+        }
+    },
+    {
+        "features": [
+            101.9,
+            7.5,
+            13.0,
+            7.8,
+            12.7
+        ],
+        "label": {
+            "left_PWM": 140,
+            "right_PWM": 40
+        }
+    },
+    {
+        "features": [
+            92.2,
+            7.8,
+            13.0,
+            7.6,
+            13.9
+        ],
+        "label": {
+            "left_PWM": 140,
+            "right_PWM": 40
+        }
+    },
+    {
+        "features": [
+            93.7,
+            7.2,
+            12.2,
+            8.2,
+            14.0
+        ],
+        "label": {
+            "left_PWM": 140,
+            "right_PWM": 40
+        }
+    },
+    {
+        "features": [
+            96.6,
+            7.7,
+            11.8,
+            8.1,
+            12.9
+        ],
+        "label": {
+            "left_PWM": 140,
+            "right_PWM": 40
+        }
+    },
+    {
+        "features": [
+            97.1,
+            7.6,
+            11.8,
+            8.1,
+            13.1
+        ],
+        "label": {
+            "left_PWM": 140,
+            "right_PWM": 40
+        }
+    },
+    {
+        "features": [
+            95.0,
+            7.4,
+            11.8,
+            8.1,
+            13.8
+        ],
+        "label": {
+            "left_PWM": 140,
+            "right_PWM": 40
+        }
+    },
+    {
+        "features": [
+            93.9,
+            7.6,
+            12.7,
+            8.2,
+            13.0
+        ],
+        "label": {
+            "left_PWM": 140,
+            "right_PWM": 40
+        }
+    },
+    {
+        "features": [
+            94.1,
+            7.6,
+            11.8,
+            8.3,
+            14.0
+        ],
+        "label": {
+            "left_PWM": 140,
+            "right_PWM": 40
+        }
+    },
+    {
+        "features": [
+            94.2,
+            7.5,
+            12.5,
+            7.6,
+            14.1
+        ],
+        "label": {
+            "left_PWM": 140,
+            "right_PWM": 40
+        }
+    },
+    {
+        "features": [
+            87.2,
+            7.6,
+            12.3,
+            8.4,
+            13.1
+        ],
+        "label": {
+            "left_PWM": 140,
+            "right_PWM": 40
+        }
+    },
+    {
+        "features": [
+            89.6,
+            7.3,
+            11.6,
+            8.2,
+            14.1
+        ],
+        "label": {
+            "left_PWM": 140,
+            "right_PWM": 40
+        }
+    },
+    {
+        "features": [
+            86.4,
+            7.5,
+            12.1,
+            8.4,
+            14.0
+        ],
+        "label": {
+            "left_PWM": 140,
+            "right_PWM": 40
+        }
+    },
+    {
+        "features": [
+            83.2,
+            7.4,
+            12.2,
+            7.8,
+            14.0
+        ],
+        "label": {
+            "left_PWM": 140,
+            "right_PWM": 40
+        }
+    },
+    {
+        "features": [
+            80.5,
+            7.2,
+            11.5,
+            7.7,
+            13.6
+        ],
+        "label": {
+            "left_PWM": 140,
+            "right_PWM": 40
+        }
+    },
+    {
+        "features": [
+            79.0,
+            7.1,
+            11.6,
+            8.3,
+            14.5
+        ],
+        "label": {
+            "left_PWM": 140,
+            "right_PWM": 40
+        }
+    },
+    {
+        "features": [
+            79.5,
+            6.9,
+            11.5,
+            8.3,
+            14.5
+        ],
+        "label": {
+            "left_PWM": 140,
+            "right_PWM": 40
+        }
+    },
+    {
+        "features": [
+            80.4,
+            7.3,
+            12.2,
+            8.2,
+            13.9
+        ],
+        "label": {
+            "left_PWM": 140,
+            "right_PWM": 40
+        }
+    },
+    {
+        "features": [
+            79.2,
+            7.2,
+            11.7,
+            8.2,
+            14.3
+        ],
+        "label": {
+            "left_PWM": 140,
+            "right_PWM": 40
+        }
+    },
+    {
+        "features": [
+            77.8,
+            7.2,
+            12.1,
+            7.9,
+            13.3
+        ],
+        "label": {
+            "left_PWM": 140,
+            "right_PWM": 40
+        }
+    },
+    {
+        "features": [
+            74.7,
+            6.8,
+            12.0,
+            7.9,
+            13.7
+        ],
+        "label": {
+            "left_PWM": 140,
+            "right_PWM": 40
+        }
+    },
+    {
+        "features": [
+            77.1,
+            7.2,
+            11.6,
+            7.9,
+            13.9
+        ],
+        "label": {
+            "left_PWM": 140,
+            "right_PWM": 40
+        }
+    },
+    {
+        "features": [
+            73.1,
+            7.1,
+            11.8,
+            8.1,
+            14.2
+        ],
+        "label": {
+            "left_PWM": 140,
+            "right_PWM": 40
+        }
+    },
+    {
+        "features": [
+            70.2,
+            7.0,
+            11.1,
+            8.6,
+            13.9
+        ],
+        "label": {
+            "left_PWM": 140,
+            "right_PWM": 40
+        }
+    },
+    {
+        "features": [
+            71.7,
+            7.0,
+            11.2,
+            8.3,
+            13.8
+        ],
+        "label": {
+            "left_PWM": 140,
+            "right_PWM": 40
+        }
+    },
+    {
+        "features": [
+            71.6,
+            6.9,
+            11.4,
+            8.6,
+            13.9
+        ],
+        "label": {
+            "left_PWM": 140,
+            "right_PWM": 40
+        }
+    },
+    {
+        "features": [
+            65.2,
+            6.8,
+            11.2,
+            8.5,
+            14.7
+        ],
+        "label": {
+            "left_PWM": 140,
+            "right_PWM": 40
+        }
+    },
+    {
+        "features": [
+            65.0,
+            6.6,
+            11.5,
+            8.7,
+            14.0
+        ],
+        "label": {
+            "left_PWM": 140,
+            "right_PWM": 40
+        }
+    },
+    {
+        "features": [
+            66.0,
+            6.5,
+            10.7,
+            8.0,
+            13.6
+        ],
+        "label": {
+            "left_PWM": 140,
+            "right_PWM": 40
+        }
+    },
+    {
+        "features": [
+            64.8,
+            6.8,
+            11.4,
+            8.0,
+            13.6
+        ],
+        "label": {
+            "left_PWM": 140,
+            "right_PWM": 40
+        }
+    },
+    {
+        "features": [
+            64.4,
+            6.9,
+            10.7,
+            8.8,
+            13.7
+        ],
+        "label": {
+            "left_PWM": 140,
+            "right_PWM": 40
+        }
+    },
+    {
+        "features": [
+            62.6,
+            6.7,
+            11.5,
+            8.8,
+            13.8
+        ],
+        "label": {
+            "left_PWM": 140,
+            "right_PWM": 40
+        }
+    },
+    {
+        "features": [
+            60.3,
+            6.5,
+            11.4,
+            8.4,
+            14.2
+        ],
+        "label": {
+            "left_PWM": 140,
+            "right_PWM": 40
+        }
+    },
+    {
+        "features": [
+            55.2,
+            6.7,
+            11.2,
+            8.6,
+            15.0
+        ],
+        "label": {
+            "left_PWM": 140,
+            "right_PWM": 40
+        }
+    },
+    {
+        "features": [
+            58.2,
+            6.4,
+            10.7,
+            8.1,
+            13.8
+        ],
+        "label": {
+            "left_PWM": 140,
+            "right_PWM": 40
+        }
+    },
+    {
+        "features": [
+            56.9,
+            6.8,
+            11.4,
+            8.6,
+            15.2
+        ],
+        "label": {
+            "left_PWM": 140,
+            "right_PWM": 40
+        }
+    },
+    {
+        "features": [
+            54.6,
+            6.4,
+            10.3,
+            8.6,
+            14.0
+        ],
+        "label": {
+            "left_PWM": 140,
+            "right_PWM": 40
+        }
+    },
+    {
+        "features": [
+            50.4,
+            6.3,
+            10.8,
+            8.6,
+            14.2
+        ],
+        "label": {
+            "left_PWM": 140,
+            "right_PWM": 40
+        }
+    },
+    {
+        "features": [
+            49.3,
+            6.1,
+            11.1,
+            8.7,
+            15.1
+        ],
+        "label": {
+            "left_PWM": 140,
+            "right_PWM": 40
+        }
+    },
+    {
+        "features": [
+            52.0,
+            6.4,
+            10.8,
+            8.2,
+            14.7
+        ],
+        "label": {
+            "left_PWM": 140,
+            "right_PWM": 40
+        }
+    },
+    {
+        "features": [
+            50.4,
+            6.5,
+            10.2,
+            8.9,
+            14.9
+        ],
+        "label": {
+            "left_PWM": 140,
+            "right_PWM": 40
+        }
+    },
+    {
+        "features": [
+            46.2,
+            6.4,
+            11.1,
+            8.5,
+            15.1
+        ],
+        "label": {
+            "left_PWM": 140,
+            "right_PWM": 40
+        }
+    },
+    {
+        "features": [
+            47.5,
+            6.0,
+            10.4,
+            8.7,
+            15.0
+        ],
+        "label": {
+            "left_PWM": 140,
+            "right_PWM": 40
+        }
+    },
+    {
+        "features": [
+            43.2,
+            6.2,
+            10.2,
+            8.6,
+            15.2
+        ],
+        "label": {
+            "left_PWM": 140,
+            "right_PWM": 40
+        }
+    },
+    {
+        "features": [
+            43.0,
+            6.2,
+            10.7,
+            8.4,
+            14.2
+        ],
+        "label": {
+            "left_PWM": 140,
+            "right_PWM": 40
+        }
+    },
+    {
+        "features": [
+            40.0,
+            6.1,
+            10.0,
+            8.5,
+            14.9
+        ],
+        "label": {
+            "left_PWM": 140,
+            "right_PWM": 40
+        }
+    },
+    {
+        "features": [
+            39.1,
+            6.0,
+            10.0,
+            8.6,
+            14.7
+        ],
+        "label": {
+            "left_PWM": 140,
+            "right_PWM": 40
+        }
+    },
+    {
+        "features": [
+            39.6,
+            6.1,
+            10.5,
+            9.0,
+            14.7
+        ],
+        "label": {
+            "left_PWM": 140,
+            "right_PWM": 40
+        }
+    },
+    {
+        "features": [
+            38.5,
+            6.2,
+            10.6,
+            8.4,
+            14.5
+        ],
+        "label": {
+            "left_PWM": 140,
+            "right_PWM": 40
+        }
+    },
+    {
+        "features": [
+            38.5,
+            6.2,
+            9.8,
+            8.8,
+            14.3
+        ],
+        "label": {
+            "left_PWM": 140,
+            "right_PWM": 40
+        }
+    },
+    {
+        "features": [
+            35.1,
+            5.9,
+            10.2,
+            9.1,
+            14.8
+        ],
+        "label": {
+            "left_PWM": 140,
+            "right_PWM": 40
+        }
+    },
+    {
+        "features": [
+            33.3,
+            5.8,
+            10.2,
+            8.5,
+            14.6
+        ],
+        "label": {
+            "left_PWM": 140,
+            "right_PWM": 40
+        }
+    },
+    {
+        "features": [
+            34.4,
+            6.0,
+            10.3,
+            8.7,
+            14.3
+        ],
+        "label": {
+            "left_PWM": 140,
+            "right_PWM": 40
+        }
+    },
+    {
+        "features": [
+            33.0,
+            5.7,
+            10.1,
+            9.3,
+            14.4
+        ],
+        "label": {
+            "left_PWM": 140,
+            "right_PWM": 40
+        }
+    },
+    {
+        "features": [
+            30.6,
+            5.9,
+            10.3,
+            9.1,
+            14.9
+        ],
+        "label": {
+            "left_PWM": 140,
+            "right_PWM": 40
+        }
+    },
+    {
+        "features": [
+            29.5,
+            5.6,
+            9.6,
+            9.0,
+            15.6
+        ],
+        "label": {
+            "left_PWM": 140,
+            "right_PWM": 40
+        }
+    },
+    {
+        "features": [
+            28.4,
+            5.8,
+            9.8,
+            8.7,
+            15.4
+        ],
+        "label": {
+            "left_PWM": 140,
+            "right_PWM": 40
+        }
+    },
+    {
+        "features": [
+            26.4,
+            6.0,
+            9.8,
+            8.6,
+            15.7
+        ],
+        "label": {
+            "left_PWM": 140,
+            "right_PWM": 40
+        }
+    },
+    {
+        "features": [
+            24.2,
+            5.9,
+            9.7,
+            9.0,
+            15.1
+        ],
+        "label": {
+            "left_PWM": 140,
+            "right_PWM": 40
+        }
+    },
+    {
+        "features": [
+            23.2,
+            5.8,
+            10.0,
+            9.1,
+            15.1
+        ],
+        "label": {
+            "left_PWM": 140,
+            "right_PWM": 40
+        }
+    },
+    {
+        "features": [
+            21.3,
+            5.6,
+            9.7,
+            8.7,
+            15.0
+        ],
+        "label": {
+            "left_PWM": 140,
+            "right_PWM": 40
+        }
+    },
+    {
+        "features": [
+            20.8,
+            5.4,
+            9.5,
+            9.4,
+            14.8
+        ],
+        "label": {
+            "left_PWM": 140,
+            "right_PWM": 40
+        }
+    },
+    {
+        "features": [
+            21.0,
+            5.4,
+            9.5,
+            9.0,
+            15.5
+        ],
+        "label": {
+            "left_PWM": 140,
+            "right_PWM": 40
+        }
+    },
+    {
+        "features": [
+            19.8,
+            5.8,
+            9.3,
+            9.2,
+            15.9
+        ],
+        "label": {
+            "left_PWM": 140,
+            "right_PWM": 40
+        }
+    },
+    {
+        "features": [
+            19.2,
+            5.6,
+            9.6,
+            9.0,
+            15.3
+        ],
+        "label": {
+            "left_PWM": 140,
+            "right_PWM": 40
+        }
+    },
+    {
+        "features": [
+            19.0,
+            5.7,
+            9.5,
+            9.0,
+            16.2
+        ],
+        "label": {
+            "left_PWM": 140,
+            "right_PWM": 40
+        }
+    },
+    {
+        "features": [
+            17.6,
+            5.7,
+            9.7,
+            9.5,
+            15.6
+        ],
+        "label": {
+            "left_PWM": 140,
+            "right_PWM": 40
+        }
+    },
+    {
+        "features": [
+            16.3,
+            5.4,
+            9.2,
+            9.6,
+            15.8
+        ],
+        "label": {
+            "left_PWM": 140,
+            "right_PWM": 40
+        }
+    },
+    {
+        "features": [
+            15.8,
+            5.3,
+            9.0,
+            9.3,
+            16.0
+        ],
+        "label": {
+            "left_PWM": 140,
+            "right_PWM": 40
+        }
+    }
+]
