@@ -1,6 +1,9 @@
 import pygame
 import os
-import json
+from joblib import load
+
+# load the model from ../models/model.pkl using joblib
+model = load('./models/model.pkl')
 
 class MLPlay:
     def __init__(self, ai_name,*args,**kwargs):
@@ -25,27 +28,12 @@ class MLPlay:
         Generate the command according to the received scene information
         """
         if scene_info["status"] == "GAME_ALIVE":
-            if pygame.K_w in keyboard or pygame.K_UP in keyboard:
-                self.control_list["left_PWM"] = 100
-                self.control_list["right_PWM"] = 100
-            elif pygame.K_a in keyboard or pygame.K_LEFT in keyboard:
-                self.control_list["left_PWM"] = -10
-                self.control_list["right_PWM"] = 10
-            elif pygame.K_d in keyboard or pygame.K_RIGHT in keyboard:
-                self.control_list["left_PWM"] = 10
-                self.control_list["right_PWM"] = -10
-            elif pygame.K_s in keyboard or pygame.K_DOWN in keyboard:
-                self.control_list["left_PWM"] = -100
-                self.control_list["right_PWM"] = -100
-            else:
-                self.control_list["left_PWM"] = 0
-                self.control_list["right_PWM"] = 0
-
-            taining_data_at_this_frame = {
-                "features": [scene_info["F_sensor"], scene_info["L_sensor"], scene_info["L_T_sensor"], scene_info["R_sensor"], scene_info["R_T_sensor"], scene_info["end_x"], scene_info["end_y"]],
-                "label": [self.control_list["left_PWM"], self.control_list["right_PWM"]]
-            }
-            self.training_data.append(taining_data_at_this_frame)
+            # get the features from the scene_info
+            features = [scene_info["F_sensor"], scene_info["L_sensor"], scene_info["L_T_sensor"], scene_info["R_sensor"], scene_info["R_T_sensor"], scene_info["end_x"], scene_info["end_y"]]
+            # predict the control list using the model
+            control_list = model.predict([features])[0]
+            self.control_list["left_PWM"] = control_list[0]
+            self.control_list["right_PWM"] = control_list[1]
 
             return self.control_list
 
@@ -57,19 +45,19 @@ class MLPlay:
         """
         Reset the status
         """
+        directory = "./models/win_rate/"
+        os.makedirs(directory, exist_ok=True)  # Create directory if it does not exist
+        file_path = f"{directory}/win_rate.txt"
+
         # 如果過關，將訓練資料寫入檔案
         if self.passed:
-            round_num = os.environ.get('ROUND')
-            print("Round:", round_num)
             print('win')
-
-            directory = f"./data/2/map_{self.map}"
-            os.makedirs(directory, exist_ok=True)  # Create directory if it does not exist
-            file_path = f"{directory}/{self.frame}frames_round{round_num}.json"
-            with open(file_path, 'w', encoding='utf-8') as file:
-                json.dump(self.training_data, file, indent=4)
+            with open(file_path, 'a', encoding='utf-8') as f:
+                f.write('win\n')
         else:
             print('lose')
+            with open(file_path, 'a', encoding='utf-8') as f:
+                f.write('win\n')
 
         self.passed = False
         self.training_data = []
