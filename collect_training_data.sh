@@ -1,7 +1,7 @@
 #!/bin/zsh
 
 # Directory to store collected data
-DATA_DIR="./data/2"
+DATA_DIR="./data/3"
 
 # How many data I want to collect in each map
 HOW_MANY=10
@@ -10,7 +10,7 @@ HOW_MANY=10
 mkdir -p "$DATA_DIR"
 
 # Iterate from map 1 to 10
-for map in {1..10}
+for map in 10
 do
   echo "Running map $map"
 

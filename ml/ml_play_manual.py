@@ -25,21 +25,36 @@ class MLPlay:
         Generate the command according to the received scene information
         """
         if scene_info["status"] == "GAME_ALIVE":
+
+            self.control_list["left_PWM"] = 0
+            self.control_list["right_PWM"] = 0
+
             if pygame.K_w in keyboard or pygame.K_UP in keyboard:
-                self.control_list["left_PWM"] = 100
-                self.control_list["right_PWM"] = 100
-            elif pygame.K_a in keyboard or pygame.K_LEFT in keyboard:
-                self.control_list["left_PWM"] = -10
-                self.control_list["right_PWM"] = 10
-            elif pygame.K_d in keyboard or pygame.K_RIGHT in keyboard:
-                self.control_list["left_PWM"] = 10
-                self.control_list["right_PWM"] = -10
-            elif pygame.K_s in keyboard or pygame.K_DOWN in keyboard:
-                self.control_list["left_PWM"] = -100
-                self.control_list["right_PWM"] = -100
-            else:
-                self.control_list["left_PWM"] = 0
-                self.control_list["right_PWM"] = 0
+                if self.control_list["left_PWM"] <= 0 and self.control_list["right_PWM"] <= 0:
+                    self.control_list["left_PWM"] += 40
+                    self.control_list["right_PWM"] += 40
+                elif self.control_list["left_PWM"] <= 200 and self.control_list["right_PWM"] <= 200:
+                    self.control_list["left_PWM"] += 20
+                    self.control_list["right_PWM"] += 20
+
+            if pygame.K_s in keyboard or pygame.K_DOWN in keyboard:
+                if self.control_list["left_PWM"] >= 0 and self.control_list["right_PWM"] >= 0:
+                    self.control_list["left_PWM"] -= 40
+                    self.control_list["right_PWM"] -= 40
+                elif self.control_list["left_PWM"] >= -200 and self.control_list["right_PWM"] >= -200:
+                    self.control_list["left_PWM"] -= 20
+                    self.control_list["right_PWM"] -= 20  
+
+            if pygame.K_a in keyboard or pygame.K_LEFT in keyboard:
+                # if the car is right turning
+                if abs(self.control_list["left_PWM"] - self.control_list["right_PWM"]) <= 20 and self.control_list["left_PWM"] > -215 and self.control_list["right_PWM"] < 215:
+                    self.control_list["left_PWM"] -= 20
+                    self.control_list["right_PWM"] += 20
+            
+            if pygame.K_d in keyboard or pygame.K_RIGHT in keyboard:
+                if abs(self.control_list["left_PWM"] - self.control_list["right_PWM"]) <= 20 and self.control_list["left_PWM"] < 215 and self.control_list["right_PWM"] > -215:
+                    self.control_list["left_PWM"] += 20
+                    self.control_list["right_PWM"] -= 20
 
             taining_data_at_this_frame = {
                 "features": [scene_info["F_sensor"], scene_info["L_sensor"], scene_info["L_T_sensor"], scene_info["R_sensor"], scene_info["R_T_sensor"], scene_info["end_x"], scene_info["end_y"]],
@@ -63,7 +78,7 @@ class MLPlay:
             print("Round:", round_num)
             print('win')
 
-            directory = f"./data/2/map_{self.map}"
+            directory = f"./data/3/map_{self.map}"
             os.makedirs(directory, exist_ok=True)  # Create directory if it does not exist
             file_path = f"{directory}/{self.frame}frames_round{round_num}.json"
             with open(file_path, 'w', encoding='utf-8') as file:

@@ -4,7 +4,6 @@ from sklearn.multioutput import MultiOutputRegressor
 from sklearn.tree import DecisionTreeRegressor
 import glob
 import json
-from sklearn.metrics import accuracy_score
 import joblib
 import os
 
@@ -17,21 +16,20 @@ labels = np.array([])
 # }
 
 # Load the dataset from ../data/2/map_1 ~ map_10/*.json
-for i in range(1, 11):
-    for file_path in glob.glob(f'../data/2/map_{i}/*.json'):
+for i in range(1, 12):
+    for file_path in glob.glob(f'./data/3/map_{i}/*.json'):
         print(file_path)
         with open(file_path, 'r', encoding='utf-8') as f:
             datas = json.load(f)
             for data in datas:
-                label = [data['label']["left_PWM"], data['label']["right_PWM"]]
+                label = [data["label"][0], data["label"][1]]
                 features = np.append(features, data['features'])
                 labels = np.append(labels, label)
 
 features = features.reshape(-1, 7)
 labels = labels.reshape(-1, 2)
 
-print(features)
-print(labels)
+# print(features)
 
 # print(len(features))
 # print(len(labels))
@@ -45,10 +43,10 @@ model.fit(features, labels)
 
 # Save the model using joblib
 print("Saving the model...")
-model_dir = '../models/'
+model_dir = './models/'
 if not os.path.exists(model_dir):
     os.makedirs(model_dir)
-joblib.dump(model, os.path.join(model_dir, 'model.pkl'))
+joblib.dump(model, os.path.join(model_dir, 'model5.pkl'))
 
 # how to predict
 # model.predict([[1, 2, 3, 4, 5, 6, 7]]) # returns [[1, 2]]

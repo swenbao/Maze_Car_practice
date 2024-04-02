@@ -3,7 +3,7 @@ import os
 from joblib import load
 
 # load the model from ../models/model.pkl using joblib
-model = load('./models/model.pkl')
+model = load('./models/model5.pkl')
 
 class MLPlay:
     def __init__(self, ai_name,*args,**kwargs):
